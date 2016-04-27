@@ -5,3 +5,5 @@ Desktop application will tell a state of human rights (women, children, minoriti
 3. Russia (as one of the powerful countries from the “east”, which among others, is influencing the modern history and development of the countries around it).
 
 Among issuing human rights in every country, in desktop application the overall political and social statistics for each country will be represented (short introduction, population, short history, government, economy etc.), as well as current issues for every country.
+
+HumanRights/images/Human_Rights_2014_Icon_Small.png
