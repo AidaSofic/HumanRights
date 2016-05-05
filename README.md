@@ -6,4 +6,4 @@ Desktop application will tell a state of human rights (women, children, minoriti
 
 Among issuing human rights in every country, in desktop application the overall political and social statistics for each country will be represented (short introduction, population, short history, government, economy etc.), as well as current issues for every country.
 
-![alt tag](C:\Users\Ivica\Desktop\HumanRights\images\BiH.jpg)
+(![alt tag](http://C:\Users\Ivica\Desktop\HumanRights\images\BiH.jpg))
