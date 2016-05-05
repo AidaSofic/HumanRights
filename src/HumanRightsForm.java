@@ -1,9 +1,13 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
+import java.awt.BorderLayout;
+
+
 
 public class HumanRightsForm extends JDialog {
     private JPanel panel1;
@@ -40,29 +44,33 @@ public class HumanRightsForm extends JDialog {
         setContentPane(panel1);
         setModal(true);
 
-        JFrame f = new JFrame();
-        JTextArea aboutCountry = new JTextArea(200,30);
-        JScrollPane ispodCountry = new JScrollPane(aboutCountry); // JTextArea is placed in a JScrollPane
-        ispodCountry.setBounds(3,3,400,400);
-        f.getContentPane().add(ispodCountry);
+        //JFrame f = new JFrame();
+        //JTextArea aboutCountry = new JTextArea(200,30);
+        //JScrollPane ispodCountry = new JScrollPane(textArea2AboutCountry); // JTextArea is placed in a JScrollPane
+        //ispodCountry.setBounds(3,3,400,400);
+        //f.getContentPane().add(ispodCountry);
 
-        JTextArea humanRights = new JTextArea(200,30);
-        JScrollPane ispodHR = new JScrollPane(humanRights);
+        //JTextArea humanRights = new JTextArea(200,30);
+        //JScrollPane ispodHR = new JScrollPane(humanRights);
         //JFrame  = new JFrame();
-        f.getContentPane().add(ispodHR);
-       // textArea2AboutCountry.setSize(50,50);
-       // textArea2AboutCountry.setSize(50,50);
+        //f.getContentPane().add(ispodHR);
+       //textArea2AboutCountry.setSize(50,50);
+       //textArea2AboutCountry.setSize(50,50);
 
-        aboutCountry.setWrapStyleWord(true);
-        aboutCountry.setLineWrap(true);
-        humanRights.setWrapStyleWord(true);
-        humanRights.setLineWrap(true);
 
+
+        textArea1HumanRights.setWrapStyleWord(true);
+        textArea1HumanRights.setLineWrap(true);
+        textArea2AboutCountry.setWrapStyleWord(true);
+        textArea2AboutCountry.setLineWrap(true);
+
+       // textArea2AboutCountry.setPreferredSize(new Dimension(2,50));
+
+        //Data for Bosnia
         CountryFlag.setIcon(new ImageIcon("images/BiH.jpg"));
         ProjectLogo.setIcon(new ImageIcon("images/logo1.jpg"));
         Source1.setText("Source: https://www.cia.gov/library/publications/the-world-factbook/geos/bk.html");
         Source2.setText("Source: https://www.amnesty.org/en/countries/europe-and-central-asia/bosnia-and-herzegovina/report-bosnia-and-herzegovina/");
-
 
         try {
             String aboutCountryStr = readFile("texts/Bosnia-AboutTheCountry.txt");
@@ -84,15 +92,15 @@ public class HumanRightsForm extends JDialog {
 
                     try {
                         String aboutCountryStr = readFile("texts/Bosnia-AboutTheCountry.txt");
-                        aboutCountry.setText(aboutCountryStr);
+                        textArea2AboutCountry.setText(aboutCountryStr);
                     } catch (IOException g) {
                         g.printStackTrace();}
                     try {
                         String aboutCountryStr = readFile("texts/Bosnia-HR.txt");
-                        humanRights.setText(aboutCountryStr);
+                        textArea1HumanRights.setText(aboutCountryStr);
                     } catch (IOException g) {
                         g.printStackTrace();}
-                    CountryFlag.setIcon(new ImageIcon("images/BiH1.jpg"));
+                    CountryFlag.setIcon(new ImageIcon("images/BiH.jpg"));
                     ProjectLogo.setIcon(new ImageIcon("images/logo1.jpg"));
                     Source1.setText("Source:https://www.cia.gov/library/publications/the-world-factbook/geos/bk.html");
                     Source2.setText("Source: https://www.amnesty.org/en/countries/europe-and-central-asia/bosnia-and-herzegovina/report-bosnia-and-herzegovina/");
@@ -101,12 +109,12 @@ public class HumanRightsForm extends JDialog {
 
                     try {
                         String aboutCountryStr = readFile("texts/Germany-AboutTheCountry.txt");
-                        aboutCountry.setText(aboutCountryStr);
+                        textArea2AboutCountry.setText(aboutCountryStr);
                     } catch (IOException g) {
                         g.printStackTrace();}
                     try {
                         String aboutCountryStr = readFile("texts/Germany-HR.txt");
-                        humanRights.setText(aboutCountryStr);
+                        textArea1HumanRights.setText(aboutCountryStr);
                     } catch (IOException g) {
                         g.printStackTrace();}
                     CountryFlag.setIcon(new ImageIcon("images/Germany.jpg"));
@@ -117,13 +125,13 @@ public class HumanRightsForm extends JDialog {
                 } else {
                     try {
                         String aboutCountryStr = readFile("texts/Russia-AboutTheCountry.txt");
-                        aboutCountry.setText(aboutCountryStr);
+                        textArea2AboutCountry.setText(aboutCountryStr);
                     } catch (IOException g) {
                         g.printStackTrace();
                     }
                     try {
                         String aboutCountryStr = readFile("texts/Russia-HR.txt");
-                        humanRights.setText(aboutCountryStr);
+                        textArea1HumanRights.setText(aboutCountryStr);
                     } catch (IOException g) {
                         g.printStackTrace();
                     }
@@ -162,21 +170,24 @@ public class HumanRightsForm extends JDialog {
 
 
         HumanRightsForm dialog = new HumanRightsForm();
-        dialog.setSize(800, 1000); //first number being width, and second height
-        dialog.setResizable(false);
+        dialog.setSize(750, 1000); //first number being width, and second height
+        dialog.setResizable(true);
         //dialog.pack();
         dialog.setVisible(true);
         System.exit(0);
+
+
 
 
     }
 
 
 
-
-
     private void createUIComponents() {
         // TODO: place custom component creation code here
+        JPanel alignment = new JPanel (new BorderLayout());
+
+
 
 
     }}
