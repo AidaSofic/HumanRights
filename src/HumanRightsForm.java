@@ -22,6 +22,7 @@ public class HumanRightsForm extends JDialog {
     private JScrollPane ispodHR;
     private JButton openButton;
     private JButton openButton1;
+    private JLabel NameOfTheProject;
 
     public String readFile(String filename) throws IOException {
         String content = null;
@@ -71,7 +72,7 @@ public class HumanRightsForm extends JDialog {
        // textArea2AboutCountry.setPreferredSize(new Dimension(2,50));
 
         //Data for Bosnia
-        CountryFlag.setIcon(new ImageIcon("images/BiH2.jpg"));
+        CountryFlag.setIcon(new ImageIcon("images/BiH.jpg"));
         ProjectLogo.setIcon(new ImageIcon("images/logo1.jpg"));
         Source1.setText("Source: https://www.cia.gov/library/publications/the-world-factbook/geos/bk.html");
         Source2.setText("Source: https://www.amnesty.org/en/countries/europe-and-central-asia/bosnia-and-herzegovina/report-bosnia-and-herzegovina/");
@@ -104,7 +105,7 @@ public class HumanRightsForm extends JDialog {
                         textArea1HumanRights.setText(aboutCountryStr);
                     } catch (IOException g) {
                         g.printStackTrace();}
-                    CountryFlag.setIcon(new ImageIcon("images/BiH2.jpg"));
+                    CountryFlag.setIcon(new ImageIcon("images/BiH.jpg"));
                     ProjectLogo.setIcon(new ImageIcon("images/logo1.jpg"));
                     Source1.setText("Source:https://www.cia.gov/library/publications/the-world-factbook/geos/bk.html");
                     Source2.setText("Source: https://www.amnesty.org/en/countries/europe-and-central-asia/bosnia-and-herzegovina/report-bosnia-and-herzegovina/");
@@ -121,7 +122,7 @@ public class HumanRightsForm extends JDialog {
                         textArea1HumanRights.setText(aboutCountryStr);
                     } catch (IOException g) {
                         g.printStackTrace();}
-                    CountryFlag.setIcon(new ImageIcon("images/Germany1.jpg"));
+                    CountryFlag.setIcon(new ImageIcon("images/Germany.jpg"));
                     ProjectLogo.setIcon(new ImageIcon("images/logo1.jpg"));
                     Source1.setText("Source:https://www.cia.gov/library/publications/the-world-factbook/geos/gm.html");
                     Source2.setText("Source:https://www.amnesty.org/en/countries/europe-and-central-asia/germany/report-germany/");
