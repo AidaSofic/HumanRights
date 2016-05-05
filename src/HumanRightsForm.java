@@ -64,10 +64,14 @@ public class HumanRightsForm extends JDialog {
         textArea2AboutCountry.setWrapStyleWord(true);
         textArea2AboutCountry.setLineWrap(true);
 
+        ProjectLogo.setVerticalAlignment(JLabel.TOP);
+
+
+
        // textArea2AboutCountry.setPreferredSize(new Dimension(2,50));
 
         //Data for Bosnia
-        CountryFlag.setIcon(new ImageIcon("images/BiH.jpg"));
+        CountryFlag.setIcon(new ImageIcon("images/BiH2.jpg"));
         ProjectLogo.setIcon(new ImageIcon("images/logo1.jpg"));
         Source1.setText("Source: https://www.cia.gov/library/publications/the-world-factbook/geos/bk.html");
         Source2.setText("Source: https://www.amnesty.org/en/countries/europe-and-central-asia/bosnia-and-herzegovina/report-bosnia-and-herzegovina/");
@@ -100,7 +104,7 @@ public class HumanRightsForm extends JDialog {
                         textArea1HumanRights.setText(aboutCountryStr);
                     } catch (IOException g) {
                         g.printStackTrace();}
-                    CountryFlag.setIcon(new ImageIcon("images/BiH.jpg"));
+                    CountryFlag.setIcon(new ImageIcon("images/BiH2.jpg"));
                     ProjectLogo.setIcon(new ImageIcon("images/logo1.jpg"));
                     Source1.setText("Source:https://www.cia.gov/library/publications/the-world-factbook/geos/bk.html");
                     Source2.setText("Source: https://www.amnesty.org/en/countries/europe-and-central-asia/bosnia-and-herzegovina/report-bosnia-and-herzegovina/");
@@ -117,7 +121,7 @@ public class HumanRightsForm extends JDialog {
                         textArea1HumanRights.setText(aboutCountryStr);
                     } catch (IOException g) {
                         g.printStackTrace();}
-                    CountryFlag.setIcon(new ImageIcon("images/Germany.jpg"));
+                    CountryFlag.setIcon(new ImageIcon("images/Germany1.jpg"));
                     ProjectLogo.setIcon(new ImageIcon("images/logo1.jpg"));
                     Source1.setText("Source:https://www.cia.gov/library/publications/the-world-factbook/geos/gm.html");
                     Source2.setText("Source:https://www.amnesty.org/en/countries/europe-and-central-asia/germany/report-germany/");
@@ -171,12 +175,14 @@ public class HumanRightsForm extends JDialog {
 
         HumanRightsForm dialog = new HumanRightsForm();
         dialog.setSize(750, 1000); //first number being width, and second height
-        dialog.setResizable(true);
+        dialog.setResizable(false);
         //dialog.pack();
         dialog.setVisible(true);
         System.exit(0);
 
-
+        //JLabel CountryFlag = new JLabel();
+        //CountryFlag.setSize(50,50);
+        //CountryFlag.getVerticalAlignment();
 
 
     }
@@ -186,7 +192,10 @@ public class HumanRightsForm extends JDialog {
     private void createUIComponents() {
         // TODO: place custom component creation code here
         JPanel alignment = new JPanel (new BorderLayout());
-
+        CountryFlag.setSize(50,50);
+        CountryFlag.getVerticalAlignment();
+        CountryFlag.setVisible(true);
+        System.exit(0);
 
 
 
