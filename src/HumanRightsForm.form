@@ -62,7 +62,7 @@
             <constraints/>
             <properties>
               <background color="-7920781"/>
-              <editable value="false"/>
+              <editable value="true"/>
               <font name="Calibri" size="18" style="1"/>
               <foreground color="-1"/>
               <lineWrap value="true"/>
