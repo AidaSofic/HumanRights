@@ -6,7 +6,7 @@ Desktop application will tell a state of human rights (women, children, minoriti
 
 Among issuing human rights in every country, in desktop application the overall political and social statistics for each country will be represented (short introduction, population, short history, government, economy etc.), as well as current issues for every country.
 
-![alt tag](https://github.com/AidaSofic/HumanRights/blob/master/BiH.jpg?raw=true)
-![alt tag](https://github.com/AidaSofic/HumanRights/blob/master/Germany.jpg?raw=true)
-![alt tag](https://github.com/AidaSofic/HumanRights/blob/master/Russia.jpg?raw=true)
-![alt tag](https://github.com/AidaSofic/HumanRights/blob/master/logo1.jpg?raw=true)
+![alt tag](https://github.com/AidaSofic/HumanRights/blob/master/images/BiH.jpg?raw=true)
+![alt tag](https://github.com/AidaSofic/HumanRights/blob/master/images/Germany.jpg?raw=true)
+![alt tag](https://github.com/AidaSofic/HumanRights/blob/master/images/Russia.jpg?raw=true)
+![alt tag](https://github.com/AidaSofic/HumanRights/blob/master/images/logo1.jpg?raw=true)
